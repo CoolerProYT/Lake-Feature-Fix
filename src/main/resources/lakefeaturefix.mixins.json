@@ -2,10 +2,8 @@
   "required": true,
   "package": "com.coolerpromc.lakefeaturefix.mixin",
   "compatibilityLevel": "JAVA_21",
-  "refmap": "productiveslimes.refmap.json",
+  "refmap": "lakefeaturefix.refmap.json",
   "mixins": [
-  ],
-  "server": [
     "LakeFeatureMixin"
   ],
   "injectors": {
