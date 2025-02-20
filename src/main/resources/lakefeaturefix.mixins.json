@@ -4,8 +4,6 @@
   "compatibilityLevel": "JAVA_21",
   "refmap": "productiveslimes.refmap.json",
   "mixins": [
-  ],
-  "server": [
     "LakeFeatureMixin"
   ],
   "injectors": {
