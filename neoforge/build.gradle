@@ -70,7 +70,10 @@ publishMods {
     curseforge {
         projectId = "1203911"
         accessToken = findProperty("CF_TOKEN")
-        minecraftVersions.add(minecraft_version)
+        minecraftVersionRange {
+            start = "26.1"
+            end = "latest"
+        }
         client = true
         server = true
     }
@@ -78,6 +81,9 @@ publishMods {
     modrinth {
         projectId = 'fBI87qhz'
         accessToken = findProperty("MODRINTH_TOKEN")
-        minecraftVersions.add(minecraft_version)
+        minecraftVersionRange {
+            start = "26.1"
+            end = "latest"
+        }
     }
 }

@@ -1,0 +1,1 @@
+- Updated mixin to prevent lake not freezing in cold biome
