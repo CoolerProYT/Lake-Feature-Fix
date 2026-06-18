@@ -11,6 +11,10 @@ neoForge {
     if (at.exists()) {
         accessTransformers.from(at.absolutePath)
     }
+    parchment {
+        minecraftVersion = parchment_minecraft
+        mappingsVersion = parchment_version
+    }
     runs {
         configureEach {
             systemProperty('neoforge.enabledGameTestNamespaces', mod_id)
@@ -21,7 +25,7 @@ neoForge {
             gameDirectory = this.mkdir(this.file("runs/client"))
         }
         data {
-            clientData()
+            data()
             gameDirectory = this.mkdir(this.file("runs/data"))
             // DataGen can be run by - "./gradlew :neoforge:runData" in Terminal.
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
@@ -71,8 +75,8 @@ publishMods {
         projectId = "1203911"
         accessToken = findProperty("CF_TOKEN")
         minecraftVersionRange {
-            start = "26.1"
-            end = "latest"
+            start = "1.21"
+            end = "1.21.11"
         }
         client = true
         server = true
@@ -82,8 +86,8 @@ publishMods {
         projectId = 'fBI87qhz'
         accessToken = findProperty("MODRINTH_TOKEN")
         minecraftVersionRange {
-            start = "26.1"
-            end = "latest"
+            start = "1.21"
+            end = "1.21.11"
         }
     }
 }
